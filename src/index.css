@@ -1,0 +1,173 @@
+body {
+  background-color: rgba(0, 0, 0, 0.850);
+  transition: all 0.3s ease-out;
+}
+/*======================================================================================================================================*/
+/*......................................................main div........................................................................*/
+/*======================================================================================================================================*/
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+/*======================================================================================================================================*/
+/*......................................................the board.......................................................................*/
+/*======================================================================================================================================*/
+.the-board {
+  background-color: rgba(35, 35, 35, 0.623);
+  box-shadow: 0.2vw 0.5vw 1vw 0.15vw rgb(0, 0, 0);
+  padding: 2vw;
+  border-top-right-radius: 1vw;
+  border-top-left-radius: 0.3vw;
+}
+/*================================================== each separate board row ===========================================================*/
+
+.board-row {
+  margin-top: -0.1vw;
+  background-color: rgb(10, 255, 173);
+  padding: 0.2vw;
+  border-radius: 0.3vw;
+  display: flex;
+}
+/*======================================================================================================================================*/
+/*..................................................... accessibility div ..............................................................*/
+/*======================================================================================================================================*/
+.accessibilityPanel {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.accessibility {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  background-color: rgba(69, 255, 193, 0.842);
+  color: rgba(36, 35, 35, 0.9);
+  box-shadow: -0.3vw 0.55vw 0.7vw 0.15vw rgb(0, 0, 0,0.5);
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5vw;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 650;
+  border-top-left-radius: 1vw;
+}
+/*================================================== accessibility status div ==========================================================*/
+
+.accessibility .status {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0.2vw;
+}
+/*================================================== accessibility buttons and effects =================================================*/
+
+.accessibility .button {
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  padding: 0.3vw 0.8vw 0.3vw 0.8vw;
+  font-size: 1.5vw;
+  border-radius: 0.7vw;
+  display: block;
+  margin: auto;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  outline: none;
+  border: none;
+  transform: scale(1.1);
+}
+.button:active {
+  outline: none;
+  border: none;
+  transform: scale(0.95);
+}
+/*=============================================== dark light mode div and button =======================================================*/
+
+.accessibility .belowStatus {
+  width: 100%;
+  height: fit-content;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0.8vw;
+  margin-bottom: 1vw;
+}
+.belowStatus #darkLightModeButton {
+  width: 63%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(50, 50, 50);
+  box-shadow: 0px 0.3vw 0.5vw 0.15vw rgba(10, 10, 10, 0.7);
+  color: antiquewhite;
+}
+/*=============================================== game info and winner's log  ==========================================================*/
+.game-info {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0.8vw;
+  text-align: left;
+}
+/*=============================================== play again div and button ============================================================*/
+
+.buttonAtBottom {
+  width: 100%;
+  height: fit-content;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 0px;
+}
+.buttonAtBottom #playAgainButton {
+  margin: auto;
+  margin-right: 1vw;
+  display: inline;
+  background-color: rgba(50, 50, 50);
+  box-shadow: 0vw 0.3vw 0.5vw 0.15vw rgba(10, 10, 10, 0.7);
+  color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+}
+.buttonAtBottom #resetButton {
+  margin: auto;
+  display: inline;
+  background-color: rgba(50, 50, 50);
+  box-shadow: 0vw 0.3vw 0.5vw 0.15vw rgba(10, 10, 10, 0.7);
+  color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+}
+/*======================================================================================================================================*/
+/*..................................................... each separate square ...........................................................*/
+/*======================================================================================================================================*/
+
+.square {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: lowercase;
+  border-radius: 0.5vw;
+  background-color: burlywood;
+  box-shadow: 0vw 0.3vw 0.5vw 0.01vw rgba(0, 0, 0, 0.171);
+  font-size: 2.3vw;
+  font-weight: bold;
+  height: 6vw;
+  margin: 0.2vw;
+  width: 6vw; 
+  padding: 1vw;
+  transition: all 0.2s ease-in-out; 
+}
+.square:hover {
+  outline: none;
+  box-shadow: 0vw 0.45vw 0.5vw 0.1vw rgba(0, 0, 0, 0.671);
+  transform: scale(1.07);
+}
+.square:focus {
+  outline: none;
+}
